@@ -2,6 +2,9 @@ node_modules
 public
 src
 .*
+dist
 tsconfig.json
 tsconfig-build.json
-config-override.js
+webpack.config.js
+yarn.lock
+README.md
