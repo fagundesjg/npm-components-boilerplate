@@ -1,0 +1,24 @@
+declare const colors: {
+    orange: string;
+    lightOrange: string;
+    darkBlue: string;
+    lightBlue: string;
+    whiteSmoke: string;
+    darkSmoke: string;
+    white: string;
+    lightGray: string;
+    inputBackground: string;
+    success: string;
+    danger: string;
+    processing: string;
+    lightPink: string;
+    secondGray: string;
+    darkGray: string;
+    yellow: string;
+    lightYellow: string;
+    green: string;
+    lightGreen: string;
+    purple: string;
+    lightPurple: string;
+};
+export { colors };

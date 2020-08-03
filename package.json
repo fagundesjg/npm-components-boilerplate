@@ -6,12 +6,12 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "start": "webpack",
+    "dist": "webpack --mode=production",
+    "start": "webpack-dev-server --mode=development",
     "g": "node ./node_modules/react-autocode/dist/index.js",
     "clean": "rm -rf lib lib-esm core core-esm",
     "build": "yarn clean && tsc --p tsconfig-build.json && tsc --p tsconfig-build.json -m es6 --outDir core-esm",
-    "prepublish": "yarn build",
-    "postpublish": "yarn clean"
+    "publish": "yarn build && npm publish && yarn clean"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,13 +44,16 @@
     "@types/node": "^14.0.27",
     "@types/react-router-dom": "^5.1.5",
     "@types/styled-components": "^5.1.1",
-    "awesome-typescript-loader": "^5.2.1",
+    "html-webpack-plugin": "^4.3.0",
     "react-autocode": "^1.0.4",
     "react-router-dom": "^5.2.0",
     "serve": "^11.3.2",
+    "source-map-loader": "^1.0.1",
     "ts-loader": "^8.0.2",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
     "typescript": "^3.9.7",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

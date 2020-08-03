@@ -24,6 +24,7 @@ yarn-error.log*
 
 core
 core-esm
+dist
 
 node_modules
 lib

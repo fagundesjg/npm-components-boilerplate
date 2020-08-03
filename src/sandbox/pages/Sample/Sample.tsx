@@ -18,7 +18,7 @@ const SampleComponent = (props: ISample) => {
       <Grid container>
         <Grid item xs={12}>
           <Paper style={{ padding: 20 }}>
-            <Typography color="primary">Sample Page</Typography>
+            <Typography color="primary">Sample Page Test</Typography>
           </Paper>
         </Grid>
       </Grid>
