@@ -3,13 +3,16 @@ import { ThemeProvider, StylesProvider } from '@material-ui/core';
 
 import { Routes } from 'sandbox/routes';
 import { theme, GlobalStyle } from 'styles';
+import { AppBarProvider } from 'contexts';
 
 function App() {
   return (
     <StylesProvider injectFirst>
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Routes />
+        <AppBarProvider>
+          <GlobalStyle />
+          <Routes />
+        </AppBarProvider>
       </ThemeProvider>
     </StylesProvider>
   );

@@ -1,7 +1,12 @@
+export enum SidebarOption {
+  Home = '/',
+  Users = '/users',
+  Attendants = '/attendants',
+}
+
 interface ICommon {
   children?: React.ReactNode;
-  opened: boolean;
-  toggleOpened: () => void;
+  pagePath: SidebarOption;
 }
 
 export interface IWithAppBar extends ICommon {}

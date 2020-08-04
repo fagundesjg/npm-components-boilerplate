@@ -1,3 +1,5 @@
-import { Sample } from './Sample';
+import { Home } from './Home';
+import { Attendants } from './Attendants';
+import { Users } from './Users';
 
-export { Sample };
+export { Home, Attendants, Users };

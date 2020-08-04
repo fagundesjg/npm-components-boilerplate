@@ -1,3 +1,4 @@
-import { AppBar } from "./AppBar";
+import { AppBar } from './AppBar';
+import { SidebarOption } from './AppBar/types';
 
-export { AppBar };
+export { AppBar, SidebarOption };

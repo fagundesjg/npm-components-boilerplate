@@ -6,13 +6,13 @@ import { Container, Content, PageContainer } from './styles';
 import { Navbar, SideBar } from './components';
 
 const AppBarComponent = (props: IAppBar) => {
-  const { children, opened, toggleOpened } = props;
+  const { children, pagePath } = props;
 
   return (
     <Container>
-      <SideBar opened={opened} />
+      <SideBar pagePath={pagePath} />
       <Content>
-        <Navbar toggleOpened={toggleOpened} opened={opened} />
+        <Navbar />
         <PageContainer>{children}</PageContainer>
       </Content>
     </Container>

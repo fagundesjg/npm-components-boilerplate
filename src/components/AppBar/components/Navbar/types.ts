@@ -1,7 +1,4 @@
-interface ICommon {
-  toggleOpened: () => void;
-  opened: boolean;
-}
+interface ICommon {}
 
 export interface IWithNavbar extends ICommon {}
 

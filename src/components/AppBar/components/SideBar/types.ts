@@ -1,3 +1,5 @@
+import { SidebarOption } from 'components';
+
 export interface IMenuItem {
   label: string;
   path: string;
@@ -5,7 +7,7 @@ export interface IMenuItem {
 }
 
 interface ICommon {
-  opened: boolean;
+  pagePath: SidebarOption;
 }
 
 export interface IWithSideBar extends ICommon {}
